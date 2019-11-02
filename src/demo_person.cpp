@@ -20,7 +20,7 @@
  */
 
 #include <iostream>
-#include "things/person.hpp"
+#include <iostream>
 
 using workshop5::things::Person;
 
