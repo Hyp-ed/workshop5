@@ -30,6 +30,12 @@ constexpr int kMinutesInHour = 60;
 double hoursToMinutes(double hours);
 double minutesToHours(double minutes);
 
+// Constants realating speed of sound go here
+constexpr double miles_in_mach = 767.3;
+
+// Conversion function declaration between Mach and mph of the speed of sound go here 
+double speedOfSoundMachMph(double speed_mach);
+
 }}}  // namespace workshop5::utils::unit_conversions
 
 #endif  // WORKSHOP5_UTILS_UNIT_CONVERSIONS_HPP_

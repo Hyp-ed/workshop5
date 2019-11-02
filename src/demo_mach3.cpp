@@ -1,8 +1,8 @@
 /*
- * Author: Branislav Pilnan
+ * Author: Sergio Miguez Aparicio
  * Organisation: HYPED
  * Date: 02/11/2019
- * Description: <What is this file for?>
+ * Description: Utility functions for converting between different units of measurement.
  *
  *    Copyright 2018 HYPED
  *    Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
@@ -16,26 +16,15 @@
  *    limitations under the License.
  */
 
-#include "unit_conversions.hpp"
+#include <iostream>
 
-namespace workshop5 {
-namespace utils {
-namespace unit_conversions {
+#include "utils/unit_conversions.hpp"
+using workshop5::utils::unit_conversions::speedOfSoundMachMph;
 
-double hoursToMinutes(double hours)
+int main () 
 {
-  return hours * kMinutesInHour;
+  // Create a variable which stores a the velocity of sound converted in mhp
+  double i = speedOfSoundMachMph(10);
+  std::cout << i; 
+  return 0;
 }
-
-double minutesToHours(double minutes)
-{
-  return minutes / kMinutesInHour;
-}
-
-// Function definition to convert from Mach init to Mph
-double speedOfSoundMachMph(double speed_mach)
-{
-  return speed_mach * miles_in_mach;
-}
-
-}}}  // namespace workshop5::utils::unit_conversions
