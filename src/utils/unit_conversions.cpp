@@ -32,4 +32,14 @@ double minutesToHours(double minutes)
   return minutes / kMinutesInHour;
 }
 
+double inchesToCm(double inches)
+{
+  return inches * kCmInInches;
+}
+
+double cmToInches(double cm)
+{
+  return cm / kCmInInches;
+}
+
 }}}  // namespace workshop5::utils::unit_conversions

@@ -25,10 +25,13 @@ namespace unit_conversions {
 
 // Constants relating different units go here
 constexpr int kMinutesInHour = 60;
+constexpr double kCmInInches = 2.54;
 
 // Conversion function declarations go here
 double hoursToMinutes(double hours);
 double minutesToHours(double minutes);
+double inchesToCm(double inches);
+double cmToInches(double cm);
 
 }}}  // namespace workshop5::utils::unit_conversions
 
