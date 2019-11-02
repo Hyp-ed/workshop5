@@ -21,7 +21,14 @@
 namespace workshop5 {
 namespace utils {
 namespace unit_conversions {
-
+double litresToPints(double litres)
+{
+  return litres / kPintInLiter;
+} 
+double pintsToLitres(double pints)
+{
+  return pints * kPintInLiter;
+}
 double hoursToMinutes(double hours)
 {
   return hours * kMinutesInHour;
