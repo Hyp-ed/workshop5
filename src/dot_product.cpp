@@ -1,9 +1,8 @@
 #include <cstdio>
 #include <vector>
-#include <iostream>
-using namespace std;
 
-int dotProduct(vector<int> array1, vector<int> array2) {
+
+int dotProduct(std::vector<int> array1, std::vector<int> array2) {
 
    if (array1.size() != array2.size()) {
       printf("Arrays of different size\n");
@@ -21,8 +20,8 @@ int dotProduct(vector<int> array1, vector<int> array2) {
 }
 
 int main(){
-   vector<int> array{3,1,5,6};
-   vector<int> array2{3,4,1,2};
+   std::vector<int> array{3,1,5,6};
+   std::vector<int> array2{3,4,1,2};
    int result = dotProduct(array,array2);
    printf("%d\n",result);
    return 0;
