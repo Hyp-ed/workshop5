@@ -1,5 +1,5 @@
 /*
- * Author: Branislav Pilnan
+ * Author: Branislav Pilnan and Laura Masselos
  * Organisation: HYPED
  * Date: 02/11/2019
  * Description: <What is this file for?>
@@ -36,6 +36,16 @@ double minutesToHours(double minutes)
 double speedOfSoundMachMph(double speed_mach)
 {
   return speed_mach * miles_in_mach;
+}
+  
+double inchesToCm(double inches)
+{
+  return inches * kCmInInches;
+}
+
+double cmToInches(double cm)
+{
+  return cm / kCmInInches;
 }
 
 }}}  // namespace workshop5::utils::unit_conversions
