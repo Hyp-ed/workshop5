@@ -1,5 +1,5 @@
 /*
- * Author: Branislav Pilnan
+ * Author: Branislav Pilnan, Paul Martin
  * Organisation: HYPED
  * Date: 02/11/2019
  * Description: Utility functions for converting between different units of measurement.
@@ -19,17 +19,23 @@
 #ifndef WORKSHOP5_UTILS_UNIT_CONVERSIONS_HPP_
 #define WORKSHOP5_UTILS_UNIT_CONVERSIONS_HPP_
 
-namespace workshop5 {
-namespace utils {
-namespace unit_conversions {
+namespace workshop5
+{
+namespace utils
+{
+namespace unit_conversions
+{
 
 // Constants relating different units go here
 constexpr int kMinutesInHour = 60;
+constexpr int kC = 299792458; // speed of light in m/s
 
 // Conversion function declarations go here
 double hoursToMinutes(double hours);
 double minutesToHours(double minutes);
+double speedOfLightToMps(double speed_of_light);
+} // namespace unit_conversions
+} // namespace utils
+} // namespace workshop5
 
-}}}  // namespace workshop5::utils::unit_conversions
-
-#endif  // WORKSHOP5_UTILS_UNIT_CONVERSIONS_HPP_
+#endif // WORKSHOP5_UTILS_UNIT_CONVERSIONS_HPP_

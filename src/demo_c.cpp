@@ -1,8 +1,8 @@
 /*
- * Author: Branislav Pilnan, Paul Martin
+ * Author: Paul Martin
  * Organisation: HYPED
  * Date: 02/11/2019
- * Description: <What is this file for?>
+ * Description: Tests light-speed to m/s function
  *
  *    Copyright 2018 HYPED
  *    Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
@@ -16,30 +16,18 @@
  *    limitations under the License.
  */
 
-#include "unit_conversions.hpp"
+#include "utils/unit_conversions.hpp"
+#include <cstdio>
 
-namespace workshop5
-{
-namespace utils
-{
-namespace unit_conversions
-{
+using workshop5::utils::unit_conversions::speedOfLightToMps;
 
-double hoursToMinutes(double hours)
+int main();
+
+int main()
 {
-  return hours * kMinutesInHour;
+  double speed_in_c = 3.4;
+  double speed_in_mps = speedOfLightToMps(speed_in_c);
+
+  printf("%fc = %fm/s\n", speed_in_c, speed_in_mps);
+  return 0;
 }
-
-double minutesToHours(double minutes)
-{
-  return minutes / kMinutesInHour;
-}
-
-double speedOfLightToMps(double speed_of_light)
-{
-  return speed_of_light * kC;
-}
-
-} // namespace unit_conversions
-} // namespace utils
-} // namespace workshop5
