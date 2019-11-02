@@ -41,6 +41,6 @@ class Person {
   int age_;
   int height_;
 };
-}}
+}}  // namespace workshop5::things
 
 #endif

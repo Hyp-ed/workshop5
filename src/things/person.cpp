@@ -62,4 +62,4 @@ void Person::setHeight(int height)
   height_ = height;
 }
   
-}}
+}} // namespace workshop5::things
