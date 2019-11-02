@@ -47,11 +47,13 @@ int Person::getAge()
   return age_;
 }
 
-void Person::setAge(int age) {
+void Person::setAge(int age) 
+{
   age_ = age;
 }
 
-int Person::getHeight() {
+int Person::getHeight() 
+{
   return height_;
 }
 
