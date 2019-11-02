@@ -1,5 +1,5 @@
 /*
- * Author: Branislav Pilnan
+ * Author: Branislav Pilnan, Paul Martin
  * Organisation: HYPED
  * Date: 02/11/2019
  * Description: <What is this file for?>
@@ -35,11 +35,9 @@ double minutesToHours(double minutes)
   return minutes / kMinutesInHour;
 }
 
-double speedOfLightToMPS(double speed_of_light)
+double speedOfLightToMps(double speed_of_light)
 {
-  int c = 299792458; // speed of light in m/s
-
-  return speed_of_light * c;
+  return speed_of_light * kC;
 }
 
 } // namespace unit_conversions
