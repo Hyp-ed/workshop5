@@ -4,3 +4,4 @@
 SRCS := \
   utils/math/functions.cpp \
   utils/unit_conversions.cpp \
+  things/person.cpp \
