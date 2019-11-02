@@ -27,7 +27,7 @@ float median (std::vector<int>v)
   // if size is odd - return middle element
   // else return average of two middle elements
   if(N % 2 == 0) {
-    return float (v[N / 2] + v[N / 2 + 1]) / 2;
+    return float (v[N / 2 - 1] + v[N / 2]) / 2;
   } 
   else {
     return v[N / 2];
