@@ -25,10 +25,10 @@ using workshop5::things::Person;
 
 int main()
 {
-  //create new Person
+  // create new Person
   Person person_("Robertas", 42, 199);
 
-  //output Person's data
+  // output Person's data
   std::cout << "Person's name: " << person_.getName() << "\n";
   std::cout << "Person's age: " << person_.getAge() << "\n";
   std::cout << "Person's height: " << person_.getHeight() << "\n";
