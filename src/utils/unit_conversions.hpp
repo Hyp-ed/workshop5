@@ -25,11 +25,12 @@ namespace unit_conversions {
 
 // Constants relating different units go here
 constexpr int kMinutesInHour = 60;
-
+constexpr double kPintInLiter = 0.568261;
 // Conversion function declarations go here
 double hoursToMinutes(double hours);
 double minutesToHours(double minutes);
-
+double pintsToLitres(double pints);
+double litresToPints(double litres);
 }}}  // namespace workshop5::utils::unit_conversions
 
 #endif  // WORKSHOP5_UTILS_UNIT_CONVERSIONS_HPP_
