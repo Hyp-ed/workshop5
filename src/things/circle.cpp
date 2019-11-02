@@ -2,26 +2,24 @@
     
 const double Circle::pi = 3.14159265;
 
-Circle::Circle(float r):
+Circle::Circle(float radius):
+  radius_(radius)
+{};
 
-  r_(r){
-
+void Circle::set_circle(float radius) {
+  radius_ = radius;
 };
 
-void Circle::set_circle(float r){
-  r_ = r;
-};
-
-Circle Circle::get_circle(){
+Circle Circle::get_circle() {
   return *this;
 }
 
-float Circle::get_area(){
-  float a = pi*r_*r_;
+float Circle::get_area() {
+  float a = pi*radius_*radius_;
   return a;
 }
 
-float Circle::get_circumference(){
-  float c = 2*pi*r_;
+float Circle::get_circumference() {
+  float c = 2*pi*radius_;
   return c;
 }

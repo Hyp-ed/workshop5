@@ -4,9 +4,9 @@ class Circle{
   
   public:
     
-    Circle(float r);
+    Circle(float radius);
 
-    void set_circle(float r);
+    void set_circle(float radius);
     
     Circle get_circle();
     
@@ -16,9 +16,9 @@ class Circle{
 
   private:
 
-    Circle(): r_(0){};
+    Circle(): radius_(0){};
 
     static const double pi;
-    float r_;
+    float radius_;
 
 };
