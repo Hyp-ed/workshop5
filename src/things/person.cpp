@@ -25,9 +25,9 @@ namespace workshop5 {
 namespace things {
 
 Person::Person(std::string name, int age, int height) 
-  : name_(name),
-    age_(age),
-    height_(height)
+    : name_(name),
+      age_(age),
+      height_(height)
 {
   // empty constructor
 }
