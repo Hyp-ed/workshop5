@@ -1,5 +1,5 @@
 /*
- * Author: Branislav Pilnan
+ * Author: Branislav Pilnan and Laura Masselos
  * Organisation: HYPED
  * Date: 02/11/2019
  * Description: Utility functions for converting between different units of measurement.
