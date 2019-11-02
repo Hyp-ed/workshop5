@@ -19,7 +19,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-float median (std::vector<int>v) 
+float median (std::vector<int> v) 
 {
   std::sort(v.begin(), v.end());
   int N = (int)v.size();
@@ -28,8 +28,7 @@ float median (std::vector<int>v)
   // else return average of two middle elements
   if(N % 2 == 0) {
     return float (v[N / 2 - 1] + v[N / 2]) / 2;
-  } 
-  else {
+  } else {
     return v[N / 2];
   }
 }
