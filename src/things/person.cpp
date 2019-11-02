@@ -3,7 +3,7 @@
  * Organisation: HYPED
  * Date: 2. November 2019
  * Description:
- * This is the main executable for BeagleBone pod node
+ * Class for storing Person's info (name, age, height)
  *
  *    Copyright 2019 HYPED
  *    Licensed under the Apache License, Version 2.0 (the "License");

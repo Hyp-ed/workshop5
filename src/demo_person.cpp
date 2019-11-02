@@ -3,8 +3,7 @@
  * Organisation: HYPED
  * Date: 2. November 2019
  * Description:
- * This is the main executable for BeagleBone pod node
- *
+ * This is the main executable for Person demo
  *    Copyright 2019 HYPED
  *    Licensed under the Apache License, Version 2.0 (the "License");
  *    you may not use this file except in compliance with the License.
@@ -19,7 +18,7 @@
  *    limitations under the License.
  */
 
-#include “things/person.hpp”
+#include "things/person.hpp"
 #include <iostream>
 
 using workshop5::things::Person;
