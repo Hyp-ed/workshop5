@@ -18,9 +18,12 @@
 
 #include "unit_conversions.hpp"
 
-namespace workshop5 {
-namespace utils {
-namespace unit_conversions {
+namespace workshop5
+{
+namespace utils
+{
+namespace unit_conversions
+{
 
 double hoursToMinutes(double hours)
 {
@@ -32,4 +35,13 @@ double minutesToHours(double minutes)
   return minutes / kMinutesInHour;
 }
 
-}}}  // namespace workshop5::utils::unit_conversions
+double speedOfLightToMPS(double speed_of_light)
+{
+  int c = 299792458; // speed of light in m/s
+
+  return speed_of_light * c;
+}
+
+} // namespace unit_conversions
+} // namespace utils
+} // namespace workshop5

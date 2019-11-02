@@ -19,9 +19,12 @@
 #ifndef WORKSHOP5_UTILS_UNIT_CONVERSIONS_HPP_
 #define WORKSHOP5_UTILS_UNIT_CONVERSIONS_HPP_
 
-namespace workshop5 {
-namespace utils {
-namespace unit_conversions {
+namespace workshop5
+{
+namespace utils
+{
+namespace unit_conversions
+{
 
 // Constants relating different units go here
 constexpr int kMinutesInHour = 60;
@@ -29,7 +32,9 @@ constexpr int kMinutesInHour = 60;
 // Conversion function declarations go here
 double hoursToMinutes(double hours);
 double minutesToHours(double minutes);
+double speedOfLightToMPS(double speed_of_light);
+} // namespace unit_conversions
+} // namespace utils
+} // namespace workshop5
 
-}}}  // namespace workshop5::utils::unit_conversions
-
-#endif  // WORKSHOP5_UTILS_UNIT_CONVERSIONS_HPP_
+#endif // WORKSHOP5_UTILS_UNIT_CONVERSIONS_HPP_
