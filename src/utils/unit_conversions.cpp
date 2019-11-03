@@ -32,6 +32,12 @@ double minutesToHours(double minutes)
   return minutes / kMinutesInHour;
 }
 
+// Function definition to convert from Mach init to Mph
+double speedOfSoundMachMph(double speed_mach)
+{
+  return speed_mach * miles_in_mach;
+}
+  
 double inchesToCm(double inches)
 {
   return inches * kCmInInches;
