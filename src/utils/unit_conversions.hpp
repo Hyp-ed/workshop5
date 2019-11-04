@@ -1,5 +1,5 @@
 /*
- * Author: Branislav Pilnan
+ * Author: Branislav Pilnan and Laura Masselos
  * Organisation: HYPED
  * Date: 02/11/2019
  * Description: Utility functions for converting between different units of measurement.
@@ -25,10 +25,19 @@ namespace unit_conversions {
 
 // Constants relating different units go here
 constexpr int kMinutesInHour = 60;
+constexpr double kCmInInches = 2.54;
 
 // Conversion function declarations go here
 double hoursToMinutes(double hours);
 double minutesToHours(double minutes);
+double inchesToCm(double inches);
+double cmToInches(double cm);
+
+// Constants realating speed of sound go here
+constexpr double miles_in_mach = 767.3;
+
+// Conversion function declaration between Mach and mph of the speed of sound go here 
+double speedOfSoundMachMph(double speed_mach);
 
 }}}  // namespace workshop5::utils::unit_conversions
 
