@@ -4,4 +4,5 @@
 SRCS := \
   utils/math/functions.cpp \
   utils/unit_conversions.cpp \
+  array_max.cpp \
   things/person.cpp \
